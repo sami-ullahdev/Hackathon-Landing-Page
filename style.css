@@ -52,6 +52,7 @@ nav {
 
 .nav-Btns {
     display: flex;
+    cursor: pointer;
     gap: 10px;
 }
 
@@ -111,6 +112,7 @@ nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .hero-circle-row {
@@ -537,6 +539,7 @@ nav {
     text-align: center;
     align-content: center;
     width: 250px;
+    cursor: pointer;
     height: 35px;
     border-radius: 50px;
     transition-duration: 500ms;
@@ -587,6 +590,7 @@ nav {
 }
 
 .price-btn-2>button {
+    cursor: pointer;
     background-color: var(--primary-color);
     color: white;
     text-align: center;
@@ -675,11 +679,14 @@ nav {
 
 }
 
-.about-us-secpund-text>div>p,
-h4 {
+.about-us-secpund-text>div>p {
     margin-top: 0px;
     margin-left: 10px;
+}
 
+.about-us-secpund-text>div>h4 {
+
+    margin-left: 10px;
 }
 
 /* About Us Section End */
@@ -761,36 +768,117 @@ h4 {
 
 /* Questions Section End */
 
+/* R2Care Section Start */
+
 .R2Care {
+    box-shadow: rgba(117, 117, 117, 0.24) 0px 3px 8px;
     background: url(./Images/Group.png) center / cover no-repeat;
-    background-color: #f8e5ffd5;
+    background: linear-gradient(180deg, rgba(148, 104, 177, 1) 44%, rgba(224, 224, 224, 0.57) 100%);
+    align-content: center;
     margin-top: 70px;
+    margin-bottom: -70px;
     border-radius: 20px;
     height: 300px;
     background-repeat: no-repeat;
+    position: relative;
+    color: #ffffff;
 }
 
 .logo-img {
     opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo-img-1 {
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .R2Care-text {
     text-align: center;
-    position: relative;
 }
 
 .R2Care-text div {
     display: flex;
-    margin-top: 10px;
     justify-content: center;
-    gap: 20px;
+    margin-top: 10px;
+    gap: 30px;
 }
 
 .R2Care-Btn {
     background-color: var(--primary-color);
+    border-radius: 10px;
+    margin-top: 20px;
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 10px;
-    margin-top: 20px;
+    cursor: pointer;
 }
+
+/* R2Care Section End */
+
+/* Footer Section Start */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    height: 350px;
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border: 2px white solid;
+    border-radius: 50%;
+}
+
+.footer-display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Mini Footer Start */
+
+.minifooter {
+    background-color: #ebebeb;
+    height: 45px;
+    width: 100%;
+}
+
+.mini-footer-display {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+/* Mini Footer Start */
+
+/* Footer Section End */
